@@ -19,7 +19,7 @@ fn main() {
         .expect("Please enter a valid date");
 
     // Calculate age
-    let age = today.year() - dob.year();
+    let age = today.year() as u32 - dob.year() as u32;
 
     // Check if the birthday has occurred this year
     let has_birthday_occurred = today.month() > dob.month()
